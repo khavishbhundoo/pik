@@ -161,11 +161,11 @@ int main(int argc, char** argv) {
   float butteraugli_distance = 1.0;
   if (arg_maxError) {
     butteraugli_distance = strtod(arg_maxError, nullptr);
-    if (!(0.5f <= butteraugli_distance && butteraugli_distance <= 3.0f)) {
-      fprintf(stderr, "Invalid/out of range distance '%s', try 0.5 to 3.\n",
-              arg_maxError);
-      return 1;
-    }
+//    if (!(0.5f <= butteraugli_distance && butteraugli_distance <= 3.0f)) {
+//      fprintf(stderr, "Invalid/out of range distance '%s', try 0.5 to 3.\n",
+//              arg_maxError);
+//      return 1;
+//    }
   }
 
   size_t target_size = 0;
